@@ -6,7 +6,7 @@ public class CalculoIMC
     public static float IMC(float p, float a)
     {
         float imc;
-        imc = p / (float) Math.pow(a, 2);
+        imc = p / (float) Math.pow(a, 2); // Colocamos (float) porque a variável de retorno é um float em um método.
         return imc;
     }
     
