@@ -6,15 +6,8 @@ public class CalculoIMC
     public static float IMC(float p, float a)
     {
         float imc;
-        imc = p / quadrado(a);
+        imc = p / (float) Math.pow(a, 2);
         return imc;
-    }
-    
-    public static float quadrado(float num)
-    {
-        float q;
-        q = num * num;
-        return q;
     }
     
     public static void main(String[] args)
